@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Chatbot in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts Link For Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
+    <script src="js/script.js" defer></script>
+    <script src="js/all.min.js" defer></script>
+    <script src="js/bootstrap.bundle.min.js.map" defer></script>
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+
+
+  </head>
+
+
+  <body>
+    <!-- start nav bar -->
+    <nav class="navbar navbar-expand-lg  ">
+        <div class="container-fluid ">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+          <a class="navbar-brand logo " href="#" >TyTopya</a>
+      
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+              </li>
+              <li class=" login nav-item " style="color:white">
+                <a class="nav-link active l" aria-current="page" href="#">Login</a>
+              </li>
+              <li class="nav-item register">
+                <a class="nav-link active " aria-current="page" href="#">Register</a>
+              </li>
+              <li class="nav-item logout ">
+                <a class="nav-link active " aria-current="page" href="#">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+    <!-- end nav bar -->
+
+
+<!-- start text summerization  -->
+<div class="containert">
+    
+<div class="heading"><h2>try our chat bot to ask any thing in AI</h2></div>
+    <textarea name="texts" id="textS" class="texts" placeholder="Enter your text"></textarea>
+
+    <button type="submit" class="btn1">get summary</button>
+
+    <div id="summary" class="summery">
+        <div id="abstractive" class="abstractive">
+            <span>Abstractive Summary</span>
+            <p class="abs_t" id="abs_t">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus maiores minima vero,
+                odit iusto et consectetur illo fuga adipisci temporibus quae sit quidem autem itaque? Sint quas ad accusantium nulla.</p>
+        </div>
+
+
+        <div id="abstractive" class="abstractive">
+            <span>Extractive Summary</span>
+            <p class="ext_t" id="ext_t">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum porro quos voluptates, corrupti quod illo atque autem asperiores
+                praesentium laboriosam? Facilis sequi illum iusto unde provident deserunt recusandae facere corporis!</p>
+        </div>
+    </div>
+</div>
+
+<!-- end text summerization  -->
+
+
+
+
+
+
+    <!-- chatbot -->
+    <button class="chatbot-toggler">
+
+      <span class="material-symbols-rounded">mode_comment</span>
+      <span class="material-symbols-outlined">close</span>
+    </button>
+
+    <div class="chatbot" id="mychatbot">
+      <header>
+        <h2 class="typing-effect">Chatbot</h2>
+        <span class="close-btn material-symbols-outlined">close</span>
+
+      </header>
+
+      <ul class="chatbox">
+        <li class="chat incoming">
+          <span class="material-symbols-outlined">smart_toy</span>
+          
+          <p>Hi there 👋<br>How can I help you today?</p>
+        </li>
+        <li class=" chat outgoing">
+            <p>asfafsaf</p>
+        </li>
+      </ul>
+      <div class="chat-input">
+        <textarea placeholder="Ask Me Any thing About Data Science And Machine Learning" spellcheck="false" required></textarea>
+        <span id="send-btn" class="material-symbols-rounded">send</span>
+      </div>
+    </div>
+    <!-- end chatbot -->
+  </body>
+</html>
